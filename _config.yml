@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-email:
-language:
+title: Great to Soul
+subtitle: 通往灵魂之路
+descriptioni:                   #网站描述, 用于爬虫抓取的关键词
+author: Geng Song
+email: great2soul@gmail.com
+language: zh-CN                 #网页编码,中文 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://great2soul.com
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -74,7 +74,7 @@ per_page: 10
 pagination_dir: page
 
 # Disqus
-disqus_shortname:
+disqus_shortname: great.soul
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
@@ -85,4 +85,8 @@ exclude_generator:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: github  #部署类型, 本文使用Github
+  repository: git@github.com:great2soul/great2soul.github.io.git  #部署的仓库的SSH
+  branch: master   #部署分支,一般使用master主分支
+plugins:
+  - hexo-generator-feed   #此插件用于RSS订阅, 以后有时间再介绍
